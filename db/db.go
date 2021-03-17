@@ -4,8 +4,6 @@ import (
 	"fmt"
 	"os"
 
-	_ "github.com/joho/godotenv/autoload"
-
 	"github.com/frozturk/gologin/models"
 	"github.com/gin-gonic/gin"
 	"gorm.io/driver/postgres"
@@ -23,6 +21,7 @@ func init() {
 	db = database
 
 	db.AutoMigrate(&models.Todo{})
+	db.AutoMigrate(&models.User{})
 }
 
 func Inject() gin.HandlerFunc {
