@@ -6,6 +6,7 @@ import (
 
 	"github.com/frozturk/gologin/models"
 	"github.com/gin-gonic/gin"
+	_ "github.com/joho/godotenv/autoload"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 )
@@ -22,6 +23,7 @@ func init() {
 
 	db.AutoMigrate(&models.Todo{})
 	db.AutoMigrate(&models.User{})
+	fmt.Printf("DATABASE CONNECTED ON %s\n", os.Getenv("DBHOST"))
 }
 
 func Inject() gin.HandlerFunc {
