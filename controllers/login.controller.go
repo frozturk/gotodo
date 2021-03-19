@@ -112,6 +112,7 @@ func Refresh(c *gin.Context) {
 
 		deleted, err := auth.DeleteToken(refreshUuid)
 		if err != nil || deleted == 0 {
+			fmt.Println(err)
 			c.Status(http.StatusForbidden)
 			return
 		}
