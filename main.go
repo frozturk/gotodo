@@ -7,9 +7,9 @@ import (
 	"github.com/frozturk/gotodo/db"
 	"github.com/frozturk/gotodo/middleware"
 	"github.com/frozturk/gotodo/redis"
-	_ "github.com/frozturk/gotodo/redis"
 	"github.com/frozturk/jwtauth"
 	"github.com/gin-gonic/gin"
+	_ "github.com/joho/godotenv/autoload"
 )
 
 func main() {
