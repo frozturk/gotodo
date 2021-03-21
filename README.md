@@ -6,7 +6,7 @@ GO is a new language to me, in this repo I apply some basic web concepts.
 ## TODO
 - [x] Configs, [GoDotEnv](https://github.com/joho/godotenv)
 - [x] Rest API, [Gin](https://github.com/gin-gonic/gin), [GORM](https://github.com/go-gorm/gorm)
-- [x] Authentication, [jwt-go](https://github.com/dgrijalva/jwt-go), [go-redis](https://github.com/go-redis/redis)
+- [x] Authentication, [jwtauth](https://github.com/frozturk/jwtauth)
 - [x] Docker
 - [ ] Test
 - [ ] CI/CD
