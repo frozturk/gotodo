@@ -22,6 +22,7 @@ GO is a new language to me, in this repo I apply some basic web concepts.
 - [ ] Server side rendering
 - [ ] Stat collection
 - [ ] Swagger
+- [ ] Caching
 
 ## HOW TO RUN?
 
