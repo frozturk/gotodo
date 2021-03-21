@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/frozturk/gotodo/auth"
 	"github.com/frozturk/gotodo/models"
+	"github.com/frozturk/jwtauth"
 	"github.com/gin-gonic/gin"
 	"gorm.io/gorm"
 )
@@ -22,7 +22,7 @@ func Login(c *gin.Context) {
 		c.Status(http.StatusUnauthorized)
 		return
 	}
-	td, err := auth.CreateToken(user.ID)
+	td, err := jwtauth.CreateToken(user.ID)
 	if err != nil {
 		c.Status(http.StatusInternalServerError)
 		return
@@ -31,7 +31,7 @@ func Login(c *gin.Context) {
 }
 
 func Logout(c *gin.Context) {
-	err := auth.LogoutToken(c.Request)
+	err := jwtauth.LogoutToken(c.Request)
 	if err != nil {
 		fmt.Println(err)
 		c.Status(http.StatusUnauthorized)
@@ -55,7 +55,7 @@ func SignUp(c *gin.Context) {
 }
 
 func Refresh(c *gin.Context) {
-	tokens, err := auth.RefreshTokens(c.Request)
+	tokens, err := jwtauth.RefreshTokens(c.Request)
 	if err != nil {
 		fmt.Println(err)
 		c.JSON(http.StatusUnauthorized, err)

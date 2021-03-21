@@ -1,14 +1,20 @@
 package main
 
 import (
+	"os"
+
 	"github.com/frozturk/gotodo/controllers"
 	"github.com/frozturk/gotodo/db"
 	"github.com/frozturk/gotodo/middleware"
+	"github.com/frozturk/gotodo/redis"
 	_ "github.com/frozturk/gotodo/redis"
+	"github.com/frozturk/jwtauth"
 	"github.com/gin-gonic/gin"
 )
 
 func main() {
+	jwtauth.Setup(os.Getenv("JWTSECRET"), redis.GetRedisClient())
+
 	app := gin.Default()
 	app.Use(db.Inject())
 
