@@ -9,9 +9,9 @@ import (
 
 func AuthenticationMW() gin.HandlerFunc {
 	return func(c *gin.Context) {
-		err := auth.IsTokenValid(c.Request)
+		err := auth.IsAuthenticated(c.Request)
 		if err != nil {
-			c.Status(http.StatusUnauthorized)
+			c.JSON(http.StatusUnauthorized, err)
 			c.Abort()
 			return
 		}

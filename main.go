@@ -16,6 +16,7 @@ func main() {
 	app.POST("/todo", controllers.Create)
 
 	app.POST("/login", controllers.Login)
+	app.GET("/logout", controllers.Logout)
 	app.POST("/signup", controllers.SignUp)
 	app.POST("/refresh", controllers.Refresh)
 
