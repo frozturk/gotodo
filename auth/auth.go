@@ -12,7 +12,7 @@ import (
 	"fmt"
 
 	"github.com/dgrijalva/jwt-go"
-	"github.com/frozturk/gologin/redis"
+	"github.com/frozturk/gotodo/redis"
 	"github.com/twinj/uuid"
 )
 

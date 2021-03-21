@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/frozturk/gologin/auth"
-	"github.com/frozturk/gologin/models"
+	"github.com/frozturk/gotodo/auth"
+	"github.com/frozturk/gotodo/models"
 	"github.com/gin-gonic/gin"
 	"gorm.io/gorm"
 )

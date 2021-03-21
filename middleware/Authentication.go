@@ -3,7 +3,7 @@ package middleware
 import (
 	"net/http"
 
-	"github.com/frozturk/gologin/auth"
+	"github.com/frozturk/gotodo/auth"
 	"github.com/gin-gonic/gin"
 )
 

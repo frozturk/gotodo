@@ -1,4 +1,4 @@
-module github.com/frozturk/gologin
+module github.com/frozturk/gotodo
 
 go 1.16
 

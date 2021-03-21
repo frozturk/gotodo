@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/frozturk/gologin/models"
+	"github.com/frozturk/gotodo/models"
 	"github.com/gin-gonic/gin"
 	_ "github.com/joho/godotenv/autoload"
 	"gorm.io/driver/postgres"

@@ -1,10 +1,10 @@
 package main
 
 import (
-	"github.com/frozturk/gologin/controllers"
-	"github.com/frozturk/gologin/db"
-	"github.com/frozturk/gologin/middleware"
-	_ "github.com/frozturk/gologin/redis"
+	"github.com/frozturk/gotodo/controllers"
+	"github.com/frozturk/gotodo/db"
+	"github.com/frozturk/gotodo/middleware"
+	_ "github.com/frozturk/gotodo/redis"
 	"github.com/gin-gonic/gin"
 )
 
