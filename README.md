@@ -5,9 +5,10 @@ GO is a new language to me, in this repo I apply some basic web concepts.
 
 ## TODO
 - [x] CONFIGS, [GoDotEnv](https://github.com/joho/godotenv)
-- [x] REST API, [Gin](https://github.com/gin-gonic/gin), [GORM](https://gorm.io/)
+- [x] REST API, [Gin](https://github.com/gin-gonic/gin), [GORM](https://github.com/go-gorm/gorm)
 - [x] AUTHENTICATION, [jwt-go](https://github.com/dgrijalva/jwt-go), [go-redis](https://github.com/go-redis/redis)
 - [x] Docker
+- [ ] Test
 - [ ] CI/CD
 - [ ] API GATEWAY
 - [ ] KUBERNETES
