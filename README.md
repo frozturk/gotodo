@@ -4,16 +4,24 @@ Hi, all!
 GO is a new language to me, in this repo I apply some basic web concepts.
 
 ## TODO
-- [x] CONFIGS, [GoDotEnv](https://github.com/joho/godotenv)
-- [x] REST API, [Gin](https://github.com/gin-gonic/gin), [GORM](https://github.com/go-gorm/gorm)
-- [x] AUTHENTICATION, [jwt-go](https://github.com/dgrijalva/jwt-go), [go-redis](https://github.com/go-redis/redis)
+- [x] Configs, [GoDotEnv](https://github.com/joho/godotenv)
+- [x] Rest API, [Gin](https://github.com/gin-gonic/gin), [GORM](https://github.com/go-gorm/gorm)
+- [x] Authentication, [jwt-go](https://github.com/dgrijalva/jwt-go), [go-redis](https://github.com/go-redis/redis)
 - [x] Docker
 - [ ] Test
 - [ ] CI/CD
-- [ ] API GATEWAY
-- [ ] KUBERNETES
-- [ ] AUTHORIZATION
-- [ ] ANGULAR UI
+- [ ] Api gateway
+- [ ] Kubernetes
+- [ ] Authorization
+- [ ] Angular ui
+- [ ] Query Cancellation
+- [ ] Logging
+- [ ] Access limit
+- [ ] Security
+- [ ] Sessions
+- [ ] Server side rendering
+- [ ] Stat collection
+- [ ] Swagger
 
 ## HOW TO RUN?
 
