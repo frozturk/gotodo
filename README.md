@@ -8,6 +8,7 @@ GO is a new language to me, in this repo I apply some basic web concepts.
 - [x] REST API, [Gin](https://github.com/gin-gonic/gin), [GORM](https://gorm.io/)
 - [x] AUTHENTICATION, [jwt-go](https://github.com/dgrijalva/jwt-go), [go-redis](https://github.com/go-redis/redis)
 - [x] Docker
+- [ ] CI/CD
 - [ ] API GATEWAY
 - [ ] KUBERNETES
 - [ ] AUTHORIZATION
