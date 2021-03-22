@@ -2,6 +2,7 @@ package main
 
 import (
 	"os"
+	"time"
 
 	"github.com/frozturk/gotodo/controllers"
 	"github.com/frozturk/gotodo/db"
@@ -13,7 +14,7 @@ import (
 )
 
 func main() {
-	jwtauth.Setup(os.Getenv("JWTSECRET"), redis.GetRedisClient())
+	jwtauth.Setup(os.Getenv("JWTSECRET"), redis.GetRedisClient(), time.Minute*7, time.Hour*24*7)
 
 	app := gin.Default()
 	app.Use(db.Inject())
